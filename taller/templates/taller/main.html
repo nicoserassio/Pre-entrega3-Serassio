@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      {% load static %}
+      
+      <title>Entrega 3 Serassio</title>
+       <!-- bootstrap css -->
+      <link rel="stylesheet" href='static/taller/css/bootstrap.min.css'>
+      <!-- style css -->
+      <link href='static/taller/css/styles.css'rel="stylesheet" />
+      <!-- Responsive-->
+      <link rel="stylesheet" href="static/taller/css/responsive.css">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="static/taller/css/jquery.mCustomScrollbar.min.css">
+      <style> 
+         body {
+           background-image: url("static/taller/images/banner.jpg");
+           background-color: #2688d3;
+         }
+         </style>
+     
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+        <!-- header -->
+      <header>
+        <!-- header inner -->
+        <div class="header">
+           <div class="container-fluid">
+              <div class="row">
+                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                    <div class="full">
+                       <div class="center-desk">
+                          <div class="logo">
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                    <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                       </button>
+                       <div class="collapse navbar-collapse" id="navbarsExample04">
+                          <ul class="navbar-nav mr-auto">
+                             <li class="nav-item active">
+                                <a class="nav-link" href="{% url 'inicio' %}"> Inicio  </a>
+                             </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="{% url 'buscarClientes' %}">Buscar Clientes</a>
+                             </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="{% url 'leerClientes' %}">Lista de Clientes</a>
+                             </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="{% url 'clienteFormulario' %}">Solicitar Turnos</a>
+                             </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href=>Login/Register</a>
+                             </li>
+                             <li class="nav-item d_none">
+                                <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                             </li>
+                          </ul>
+                       </div>
+                    </nav>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </header>
+     <!-- end header inner -->
+     <!-- end header -->
+      
+      <!-- herencia de html -->
+      {% block contenidoQueCambia %}
+
+      {% endblock %}
+      <!-- fin herencia de html -->
+      <!-- about -->
+      <div  class="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Con la mision de aplicar presicion, constancia y determinacion a cualquier service que requiera su auto. Cumpliendo con las normas de calidad vigentes para que maneje seguro </h2>
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                     <div class="about_img">
+                        <div class="about_box">
+                           <h3><center>Servicio de Mecanica general</center></h3>
+                           <p></p>
+                           <a class="read_more"></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+            </div>
+      <!--  footer -->
+      <footer id="contact">
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="titlepage">
+                        <h2></h2>
+                     </div>
+                  </div>
+                  <div class="col-md-8">
+                     <ul class="location_icon">
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Rosario, Santa Fe</li>
+                        <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a> 0341-15-1111111</li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>demo@gmail.com</li>
+                     </ul>
+                  </div>
+                  <div class="col-md-6">
+                     
+                  </div>
+                  
+                  </div>
+               </div>
+            </div>
+           </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>

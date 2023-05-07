@@ -1,0 +1,29 @@
+{% extends "taller/main.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body><center>
+    <p>Estamos buscando al Cliente: {{nombre}}</p>
+    {% if nombres%}
+    <ul>
+        {% for nombre in nombres %}
+        <li>{{Cliente.nombre}}</li>
+        <li>{{Cliente.apellido}}</li>
+        <li>{{Cliente.telefono}}</li>
+        <li>{{Cliente.email}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    </center>   
+</body>
+</html>
+
+{% endblock %}
